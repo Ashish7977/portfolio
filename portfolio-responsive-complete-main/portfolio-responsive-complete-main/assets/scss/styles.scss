@@ -523,3 +523,26 @@ img{
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .home.bd-grid {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      row-gap: 2rem;
+    }
+  
+    .home__img {
+      position: static; /* Remove absolute position */
+      width: 220px;      /* Adjust as needed */
+      margin-top: 1rem;
+    }
+  
+    .home__data {
+      padding: 0 1rem;
+    }
+  
+    .home__title {
+      font-size: 1.8rem;
+    }
+  }
