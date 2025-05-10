@@ -215,9 +215,12 @@ img {
 }
 .home__blob {
   fill: var(--first-color);
+  position: relative;
+  top: 50px
 }
 .home__blob-img {
   width: 360px;
+  margin-top: 200px;
 }
 
 /*BUTTONS*/
@@ -482,5 +485,28 @@ img {
   }
   .home__img {
     width: 450px;
+  }
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Responsive stacking on smaller screens */
+  @media screen and (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home__data {
+      order: 1;
+    }
+  
+    .home__img {
+      order: 2;
+      margin-top: 2rem;
+    }
   }
 }
