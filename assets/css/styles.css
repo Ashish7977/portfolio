@@ -219,9 +219,11 @@ img {
   top: 50px
 }
 .home__blob-img {
-  width: 100%;
+  width: 63%;
   height: auto;
   margin-top: 200px;
+ 
+  object-fit: cover;
 }
 
 /*BUTTONS*/
